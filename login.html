@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="CSS/style.css">
+    <title>Login</title>
+    <script>
+        function validateForm() {
+            // Obtendo os valores dos campos
+            const email = document.querySelector('input[name="email"]').value;
+            const senha = document.querySelector('input[name="senha"]').value;
+
+            // Verifica se os campos estão vazios
+            if (email === "" || senha === "") {
+                alert("Por favor, preencha todos os campos.");
+                return false; // Impede o envio do formulário
+            }
+
+            // Verifica as credenciais
+            if (email === "joalissonduarte@hotmail.com" && senha === "123456") {
+                // Redireciona para o perfil do aluno
+                window.location.href = "feed.html"; // Altere para o caminho correto do arquivo de perfil
+                return false; // Impede o envio do formulário
+            } else {
+                alert("E-mail ou senha incorretos. Tente novamente.");
+                return false; // Impede o envio do formulário
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <div id="login">
+        <div class="caixa">
+            <img src="CSS/img/logo_hat.png" alt="Logo">
+            <h1>FreeTeacher</h1>
+
+            <div class="e-mail">
+                <label for="email"></label>
+                <input type="text" name="email" placeholder="E-mail" required>
+            </div>
+
+            <div class="senha">
+                <label for="senha"></label>
+                <input type="password" name="senha" placeholder="Senha" required>
+            </div>
+
+            <div class="entrar">
+                <p>Ainda não tem uma conta? <a href="Cadastro.html">Crie uma.</a></p>
+                <p>Esqueceu a senha? <a href="Cadastro.html">Clique aqui.</a></p>
+                <form onsubmit="return validateForm()">
+                    <input type="submit" value="Entrar">
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
+
+</html>

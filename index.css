@@ -1,0 +1,124 @@
+/* Reset de estilos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Corpo da página */
+body {
+    background-color: #e3f2fd; /* Azul suave */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+/* Estilizando o cabeçalho e o menu */
+header {
+    background-color: #2196f3;
+    padding: 1rem;
+    width: 100%;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header nav {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    list-style: none;
+}
+
+header nav li {
+    display: inline;
+}
+
+header nav li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+header nav li a:hover {
+    background-color: #1976d2;
+}
+
+/* Estilo do contêiner de login */
+#login {
+    background-color: #ffffff;
+    border: 3px solid #2196f3;
+    border-radius: 8px;
+    padding: 2rem;
+    width: 100%;
+    max-width: 400px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin-top: 120px; /* Ajuste para centralizar abaixo do header fixo */
+}
+
+/* Estilo do formulário de login */
+.login img {
+    width: 100px;
+    margin-bottom: 1rem;
+}
+
+.login div {
+    margin-bottom: 15px;
+}
+
+.login input[type="text"],
+.login input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #2196f3;
+    border-radius: 4px;
+    background-color: #f1f8ff;
+    transition: border-color 0.3s;
+    font-size: 1rem;
+}
+
+.login input[type="text"]:focus,
+.login input[type="password"]:focus {
+    border-color: #1976d2;
+    outline: none;
+}
+
+.login input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #2196f3;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 10px;
+}
+
+.login input[type="submit"]:hover {
+    background-color: #1976d2;
+}
+
+.login p {
+    margin-top: 10px;
+    font-size: 0.9rem;
+}
+
+.login a {
+    color: #2196f3;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.login a:hover {
+    color: #1976d2;
+}

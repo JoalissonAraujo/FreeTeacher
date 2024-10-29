@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biblioteca Virtual</title>
+    <link rel="stylesheet" href="bibli.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Biblioteca Virtual</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="upload-section">
+            <h2>Adicionar Livro</h2>
+            <form id="upload-form">
+                <input type="file" id="book-file" accept=".pdf" required>
+                <input type="text" id="book-title" placeholder="Título do Livro" required>
+                <textarea id="book-description" placeholder="Descrição do Livro" required></textarea>
+                <label>
+                    <input type="checkbox" id="exclusive"> Exclusivo
+                </label>
+                <button type="submit">Adicionar</button>
+            </form>
+        </section>
+
+        <section id="library-section">
+            <h2>Minha Biblioteca</h2>
+            <div id="library" class="library"></div>
+        </section>
+    </main>
+
+    <script src="bibli.js"></script>
+</body>
+</html>

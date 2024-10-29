@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Perfil_Aluno.css">
+    <title>Perfil do Aluno</title>
+</head>
+
+<body>
+    <div class="perfil-container">
+        <div class="perfil-header">
+            <div class="foto-perfil">
+                <input type="file" id="file-input" accept="image/*" onchange="previewImage(event)">
+                <img id="preview" src="CSS/img/default-avatar.png" alt="Foto do Perfil">
+            </div>
+            <h1 id="nome-aluno">Nome do Aluno</h1>
+            <p id="instituicao-ensino">Instituição de Ensino</p>
+        </div>
+        <div class="perfil-info">
+            <h2>Sobre</h2>
+            <p id="descricao">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin aliquet venenatis nisi, et suscipit dui.</p>
+        </div>
+        <div class="perfil-funcionalidades">
+            <h2>Funcionalidades</h2>
+            <ul>
+                <li><button onclick="editProfile()">Editar Perfil</button></li>
+                <li><button onclick="viewCourses()">Ver Cursos</button></li>
+                <li><button onclick="logout()">Sair</button></li>
+            </ul>
+        </div>
+        <div class="feed">
+            <h2>Feed de Publicações</h2>
+            <div class="nova-publicacao">
+                <textarea id="publicacao-input" placeholder="O que você está pensando?"></textarea>
+                <button onclick="addPost()">Publicar</button>
+            </div>
+            <div id="posts" class="posts-container"></div>
+        </div>
+    </div>
+
+    <script src="Perfil_Aluno.js"></script>
+</body>
+
+</html>

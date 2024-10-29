@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rede Social Universitária</title>
+    <link rel="stylesheet" href="feed.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="bibli.html">Biblioteca Pessoal</a>
+            <a href="Perfil_Aluno.html">Meu Perfil</a>
+            <a href="#">Amigos</a>
+            <a href="#">Mensagens</a>
+        </nav>
+        <!-- Removido o círculo de usuário do cabeçalho -->
+    </header>
+
+    <main>
+        <!-- Área de criação de post -->
+        <section id="create-post">
+            <textarea placeholder="Compartilhe algo ou procure uma aula de reforço..."></textarea>
+            <button>Publicar</button>
+        </section>
+
+        <!-- Área de feed com publicações representativas -->
+        <section class="feed">
+            <div class="post">
+                <div class="post-header">
+                    <div class="user-image"></div> <!-- Círculo do usuário do post -->
+                    <h3>Ana Souza</h3>
+                    <span>Procurando aula de reforço em Cálculo I</span>
+                </div>
+                <p class="post-content">Alguém disponível para me ajudar com Cálculo I? Precisando de uma explicação para integrais.</p>
+                <div class="post-actions">
+                    <button class="like">Curtir</button>
+                    <button class="comment">Comentar</button>
+                    <button class="share">Compartilhar</button>
+                </div>
+            </div>
+
+            <div class="post">
+                <div class="post-header">
+                    <div class="user-image"></div> <!-- Círculo do usuário do post -->
+                    <h3>Lucas Almeida</h3>
+                    <span>Procurando parceiro para projeto de IA</span>
+                </div>
+                <p class="post-content">Estou desenvolvendo um projeto de IA para análise de dados, e procuro alguém com conhecimento em Python e Machine Learning.</p>
+                <div class="post-actions">
+                    <button class="like">Curtir</button>
+                    <button class="comment">Comentar</button>
+                    <button class="share">Compartilhar</button>
+                </div>
+            </div>
+
+            <div class="post">
+                <div class="post-header">
+                    <div class="user-image"></div> <!-- Círculo do usuário do post -->
+                    <h3>Maria Clara</h3>
+                    <span>Aula de reforço em Física disponível</span>
+                </div>
+                <p class="post-content">Estou oferecendo aulas de reforço em Física para ensino superior. Me chamem se tiverem interesse!</p>
+                <div class="post-actions">
+                    <button class="like">Curtir</button>
+                    <button class="comment">Comentar</button>
+                    <button class="share">Compartilhar</button>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="feed.js"></script>
+</body>
+</html>
